@@ -25,8 +25,10 @@ if !(iptables-save -t filter | grep -q "$gw_intf2 (ocserv3)"); then
 iptables -A INPUT -p tcp --dport $ocserv_tcpport -m comment --comment "$gw_intf2 (ocserv3)" -j ACCEPT
 fi
 
-if !(iptables-save -t filter | grep -q "$gw_intf2 (ocserv4)"); then
-iptables -A INPUT -p udp --dport $ocserv_udpport -m comment --comment "$gw_intf2 (ocserv4)" -j ACCEPT
+if [ "$ocserv_udpport" != "" ]; then
+    if !(iptables-save -t filter | grep -q "$gw_intf2 (ocserv4)"); then
+        iptables -A INPUT -p udp --dport $ocserv_udpport -m comment --comment "$gw_intf2 (ocserv4)" -j ACCEPT
+    fi
 fi
 
 # turn on MSS fix
