@@ -47,7 +47,7 @@ rm -f $PIDFILE
 force-reload|restart)
 echo "Restarting OpenConnect VPN Server: "
 $0 stop
-sleep 1
+sleep 3
 $0 start
 ;;
 status)
