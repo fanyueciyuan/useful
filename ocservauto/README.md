@@ -1,5 +1,8 @@
-##OCSERV-AUTO
-这是一枚适用于deibian 7的openconnect server安装脚本。
+##Ocservauto For Debian
+
+This script may help you setup your own openconnetc_server in debian_7.
+
+这是一枚适用于deibian_7的openconnect_server安装脚本。
 
 ============
 
@@ -11,3 +14,38 @@ wget https://raw.githubusercontent.com/fanyueciyuan/useful/master/ocservauto/SSL
 bash SSLVPNauto-L-0.2.sh
 ```
 ============
+
+
+Profiles in /etc/ocserv/
+
+When you change the profiles,restart the vpn server.
+```shell
+/etc/init.d/ocserv restart
+```
+
+============
+
+##LICENCE
+Ocservauto For Debian Copyright (C) liyangyijie released under GNU GPLv2
+
+Ocservauto For Debian Is Based On SSLVPNauto v0.1-A1
+
+SSLVPNauto For Debian Copyright (C) Alex Fang frjalex@gmail.com released under GNU GPLv2
+
+
+
+    Copyright (C) 2014  liyangyijie
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
