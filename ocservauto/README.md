@@ -10,8 +10,8 @@ This script may help you setup your own openconnetc_server in debian_7.
 ```shell
 apt-get update
 apt-get install wget
-wget https://raw.githubusercontent.com/fanyueciyuan/useful/master/ocservauto/SSLVPNauto-L-0.2.sh --no-check-certificate
-bash SSLVPNauto-L-0.2.sh
+wget https://raw.githubusercontent.com/fanyueciyuan/useful/master/ocservauto/ocservauto0.2.sh --no-check-certificate
+bash ocservauto0.2.sh
 ```
 ============
 
